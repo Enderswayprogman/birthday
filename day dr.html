@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>С днём рождения!</title>
+	<link rel="stylesheet" href="day dr.css">
+</head>
+<body >
+	<figure class="main">
+		<div class="img" id="place"></div>
+		<script type="text/javascript">
+		    var phr = new Array();
+		    phr.push("rama.jpg");
+		    phr.push("korab.jpg");
+		    phr.push("newy.jpg");
+		    phr.push("e.jpg");
+		    phr.push("d.jpg");
+		    phr.push("t.jpg");
+		 
+			function Rotator_cont() {
+			var s = 4000;  // Время отображения
+			var N=phr.length;
+			var i=Math.round(Math.random()*(N));Rotator(i);
+
+			function Rotator(i){
+			i++; if(i>N-1){i=0};//alert(i);
+			document.getElementById('place').style.backgroundImage='url('+phr[i]+')';
+			timerId01=setTimeout(function(){Rotator(i)},s);return;}
+			}Rotator_cont()
+		</script>
+
+		<figcaption class="main-text">
+			Дорогая мама, с днём рождения!
+			Желаю тебе <span class="hp">здоровья</span>,
+			<span class="chast">счастья</span>, новых <span class="ot">открытий</span> и <span>впечатлений</span> <i>и чтобы дети хорошо себя вели</i>.
+		</figcaption>
+	</figure>
+
+</body>
+</html>
