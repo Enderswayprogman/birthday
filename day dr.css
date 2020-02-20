@@ -23,7 +23,8 @@ body{
 	transition: 0.2s;
 }
 .main .img:hover{
-	transform: scaleY(1.2);
+	transform: scaleY(1.5);
+	transform: scaleX(1.5);
 	transition: 1s;
 }
 .hp{
